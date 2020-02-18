@@ -3,6 +3,7 @@
 describe('My First Test', () => {
   it('Visits the app root url', () => {
     cy.visit('/')
-    cy.contains('h1', 'Welcome to Your Vue.js App')
+    cy.get('#-e2e-sign-in-button').should('contain.text', 'Sign In')
+    cy.get('#-e2e-sign-in-button').click()
   })
 })
