@@ -7,6 +7,7 @@
             required
             :loading="loadingForm"
             color="#32BCC3"
+            id="-e2e-email"
         ></v-text-field>
         <v-text-field
             v-model="loginUser.password"
@@ -22,7 +23,7 @@
         ></v-text-field>
 
         <!-------------------------  FORM ERRORS  ------------------->
-        <div v-if="errors" class="subtitle1 text-center text-capitalize red--text">
+        <div v-if="errors" class="subtitle1 text-center text-capitalize red--text" id="-e2e-error-messages">
             <p v-for="(errorMessage, i) in errors" :key="i">{{errorMessage}}</p>
             <span>Don't have an account? <router-link class="cyan--text" to="/signup">Sign Up Here</router-link></span>
         </div>

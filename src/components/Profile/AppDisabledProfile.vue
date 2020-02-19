@@ -4,7 +4,7 @@
             Profile not found
         </div>
         <div class="subtitle-1 text-center mb-5">
-            <div class="grey--text text--darken-1">Don't have an account?</div> 
+            <div class="grey--text text--darken-1">Don't have an account?</div>
             <router-link to="/signup" class="title">
                 <v-btn color="#32BCC3" elevation="0" class="mt-3" dark>
                     Sign Up
@@ -14,7 +14,7 @@
         <div class="subtitle-1 text-center">
             <div class="grey--text text--darken-1">Already have an account?</div>
             <router-link to="/login" class="title">
-                <v-btn color="#E0E0E0" elevation="0" class="mt-3">
+                <v-btn color="#E0E0E0" elevation="0" class="mt-3" id="-e2e-sign-in-button">
                     Sign In
                 </v-btn>
             </router-link>
